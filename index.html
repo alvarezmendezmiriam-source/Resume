@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miriam Álvarez · Senior Program & Project Manager</title>
+<meta name="description" content="PMP-certified Senior Program and Project Manager. 8+ years leading $10M–$105M programs for Fortune 500 customers. Remote, all Americas time zones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1E2230;--cream:#F4F0EA;--card:#FFFFFF;--terra:#B4532F;--coral:#E07A4F;--teal:#2F6B6B;--ink:#2A2D38;--muted:#6B6E78;--line:#E4DED4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.serif{font-family:'Fraunces',Georgia,serif}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terra);margin:0 0 10px}
+
+/* top bar */
+.top{background:var(--navy);color:var(--cream)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Fraunces',serif;font-weight:500;font-size:26px;letter-spacing:-.02em;text-decoration:none}
+.logo span{color:var(--coral)}
+.top nav{display:flex;gap:26px;font-size:14.5px}
+.top nav a{text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;color:var(--coral)}
+
+/* hero */
+.hero{padding-top:28px}
+.hero-card{background:var(--navy);color:var(--cream);border-radius:28px;padding:56px 56px 48px;position:relative;overflow:hidden}
+.hero-card .spark{position:absolute;right:56px;top:44px;color:var(--coral)}
+.hero h1{margin:0;font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:clamp(46px,7vw,86px);line-height:1;letter-spacing:-.02em}
+.hero .role{margin:16px 0 0;font-size:clamp(18px,2.2vw,22px);font-weight:500}
+.hero .role b{color:var(--coral);font-weight:700}
+.hero .pitch{margin:22px 0 0;max-width:640px;font-size:18px;line-height:1.65;color:#D9D5CE}
+.hero .meta{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;color:#BDB8B0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;padding:13px 22px;border-radius:999px;transition:transform .15s,background .15s,color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--coral);color:var(--navy)}
+.btn-primary:hover{background:#F0916A}
+.btn-ghost{border:1.5px solid rgba(244,240,234,.5);color:var(--cream)}
+.btn-ghost:hover{background:var(--cream);color:var(--navy)}
+
+/* numbers */
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
+.num{background:var(--card);border-radius:20px;padding:24px 22px;border:1px solid var(--line)}
+.num strong{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:40px;line-height:1;color:var(--terra);letter-spacing:-.02em}
+.num span{display:block;margin-top:10px;font-size:14.5px;line-height:1.45;color:var(--muted)}
+
+section{padding:76px 0 0}
+h2{margin:0;font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:clamp(34px,4.5vw,48px);line-height:1.08;color:var(--terra);letter-spacing:-.01em}
+.lead{margin:12px 0 0;max-width:680px;color:var(--muted)}
+
+/* case studies */
+.cases{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:30px 30px 28px;display:flex;flex-direction:column}
+.case .tag{align-self:flex-start;font-size:12.5px;font-weight:700;color:var(--teal);background:#E3EEEC;border-radius:999px;padding:5px 12px}
+.case .result{margin:18px 0 0;font-family:'Fraunces',serif;font-weight:500;font-size:34px;line-height:1.05;color:var(--navy);letter-spacing:-.02em}
+.case .result small{display:block;margin-top:6px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;color:var(--terra);letter-spacing:0}
+.case dl{margin:20px 0 0;display:grid;gap:12px}
+.case dt{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.case dd{margin:2px 0 0;font-size:15.5px;line-height:1.55}
+
+/* experience */
+.timeline{margin-top:34px;border-left:2px solid var(--line);padding-left:28px;display:grid;gap:30px}
+.job{position:relative}
+.job::before{content:"";position:absolute;left:-36px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--cream);border:3px solid var(--terra)}
+.job h3{margin:0;font-size:19px;font-weight:700}
+.job .co{color:var(--terra)}
+.job .when{font-size:14px;color:var(--muted);margin-top:2px}
+.job p{margin:8px 0 0;max-width:760px}
+.job ul{margin:8px 0 0;padding-left:20px;max-width:760px}
+.job li{margin:4px 0}
+.earlier{margin-top:6px;font-size:15px;color:var(--muted)}
+.earlier b{color:var(--ink);font-weight:700}
+
+/* skills */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px}
+.box h3{margin:0 0 14px;font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:26px;color:var(--terra)}
+.box ul{margin:0;padding:0;list-style:none}
+.box li{position:relative;padding-left:16px;margin:7px 0;font-size:15.5px;line-height:1.45}
+.box li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--terra)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13.5px;font-weight:700;color:#fff;background:var(--navy);border-radius:999px;padding:6px 12px}
+.chip:nth-child(3n+2){background:var(--teal)}
+.sub{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:18px 0 10px}
+.sub:first-of-type{margin-top:0}
+
+/* cta */
+.cta{margin:80px 0 0;background:var(--navy);color:var(--cream);border-radius:28px;padding:52px;text-align:center}
+.cta h2{color:var(--cream)}
+.cta p{margin:14px auto 0;max-width:560px;color:#D9D5CE}
+.cta .btns{justify-content:center}
+footer{padding:34px 0 44px;text-align:center;font-size:13.5px;color:var(--muted)}
+
+@media (max-width:860px){
+  .numbers{grid-template-columns:repeat(2,1fr)}
+  .cases,.grid3{grid-template-columns:1fr}
+  .top nav{display:none}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .hero-card{padding:40px 24px 34px;border-radius:22px}
+  .hero-card .spark{right:22px;top:24px}
+  .case{padding:24px 22px}
+  .num strong{font-size:32px}
+  .cta{padding:40px 22px}
+  section{padding-top:60px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">ma<span>.</span></a>
+    <nav>
+      <a href="#results">Results</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-card">
+      <svg class="spark" width="44" height="44" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0C22 14 26 18 40 20 26 22 22 26 20 40 18 26 14 22 0 20 14 18 18 14 20 0Z" fill="currentColor"/></svg>
+      <p class="eyebrow" style="color:var(--coral)">Resume</p>
+      <h1>Miriam Álvarez</h1>
+      <p class="role">Senior Program &amp; Project Manager · <b>PMP</b></p>
+      <p class="pitch">I get brought into troubled, client-facing programs to find the real problem, make fast data-driven calls and turn accounts into renewals, growth and profit. 8+ years of delivery leadership, nearly 4 at Cisco running $10M–$105M programs for Fortune 500 clients.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="Miriam_Alvarez_Mendez_Resume_EN.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/miriamalvarezmendez" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="#contact">Contact</a>
+      </div>
+      <div class="meta">
+        <span>Remote · all Americas time zones</span>
+        <span>English &amp; Spanish</span>
+        <span>Leads distributed, multicultural teams</span>
+      </div>
+    </div>
+
+    <div class="numbers" aria-label="Key numbers">
+      <div class="num"><strong>$105M</strong><span>largest program led, for Fortune 500 clients</span></div>
+      <div class="num"><strong>−92%</strong><span>blocked-site backlog cut in under a year</span></div>
+      <div class="num"><strong>3x</strong><span>budget on a renewal won from a frustrated client</span></div>
+      <div class="num"><strong>35+</strong><span>engineers, PMs, partners and vendors led at once</span></div>
+    </div>
+  </div>
+
+  <section id="results">
+    <div class="wrap">
+      <p class="eyebrow">Selected results · Cisco</p>
+      <h2>Problem, decision, result</h2>
+      <p class="lead">Four programs I was brought into, what I decided and what changed.</p>
+
+      <div class="cases">
+        <article class="case">
+          <span class="tag">Duke Energy · Energy &amp; Utilities · $65M · 35+ people</span>
+          <p class="result">700+ → 55 sites<small>Backlog cut 92% in under a year · record revenue · 5-year renewal</small></p>
+          <dl>
+            <dt>Problem</dt><dd>As Lead PM, then Program Manager, I inherited 700+ blocked data center sites with no remediation process.</dd>
+            <dt>Decision</dt><dd>Designed a new operating model with clear roles, logistics, communication and prioritization standards, plus tiered site proposals that increased upsell.</dd>
+            <dt>Result</dt><dd>PMs ran sites in parallel and the backlog dropped to 55. Record annual revenue, the 5-year contract renewal, and I was reassigned to the Johnson &amp; Johnson account based on delivery performance.</dd>
+          </dl>
+        </article>
+
+        <article class="case">
+          <span class="tag">DTCC · Financial Market Infrastructure · $25M</span>
+          <p class="result">Renewed at 3x<small>the original budget, 9 months after I joined</small></p>
+          <dl>
+            <dt>Problem</dt><dd>Brought in as Program Manager nine months before renewal, with a client frustrated by slow, manual upgrades.</dd>
+            <dt>Decision</dt><dd>Built an automation team with engineering to standardize firewall, SD-WAN, wireless and Webex changes.</dd>
+            <dt>Result</dt><dd>Weeks of work became a repeatable process and the client renewed at three times the budget.</dd>
+          </dl>
+        </article>
+
+        <article class="case">
+          <span class="tag">Liberty Mutual · Insurance · $55M cybersecurity</span>
+          <p class="result">Profitable in &lt;1 year<small>without cutting the client's budget</small></p>
+          <dl>
+            <dt>Problem</dt><dd>An unprofitable program where the budget never seemed to cover the requests.</dd>
+            <dt>Decision</dt><dd>Traced funds to a low-value feature, delivered the hard news and redirected that team to infrastructure work with immediate business value. Coached PMs to filter requests against client goals.</dd>
+            <dt>Result</dt><dd>The account turned profitable in under a year.</dd>
+          </dl>
+        </article>
+
+        <article class="case">
+          <span class="tag">Navy Federal Credit Union · Banking · $105M</span>
+          <p class="result">Trust restored<small>and a wireless expansion approved</small></p>
+          <dl>
+            <dt>Problem</dt><dd>A long-dissatisfied account with an escalated executive Wi-Fi complaint.</dd>
+            <dt>Decision</dt><dd>Turned the complaint into a site survey that proved the root cause and exposed outdated network documentation, then fixed both.</dd>
+            <dt>Result</dt><dd>Executive trust came back, and the client approved new access points and equipment to expand its network.</dd>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <p class="eyebrow">Experience</p>
+      <h2>Where I've led</h2>
+      <div class="timeline">
+        <div class="job">
+          <h3>Senior Project Manager / Program Manager · <span class="co">Cisco Systems</span></h3>
+          <div class="when">Oct 2022 – Jun 2026 · Remote</div>
+          <ul>
+            <li>Owned end-to-end, client-facing delivery of $10M–$105M programs across energy, financial services, insurance, life sciences and telecom, often several at once, with teams of up to 35+ engineers, PMs, partners and vendors.</li>
+            <li>Owned governance, steering-level reporting, budgets and margins. Program Manager on two multi-project programs; promoted two grade levels to Senior Project Manager.</li>
+            <li>Also delivered for Johnson &amp; Johnson (Life Sciences, $10M), Megacable and Metrocarrier (Telecom, Mexico; data center projects of MXN $27M and $17M), and engagements with Salesforce, Apple, HSBC and Banorte.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Founder &amp; Project Lead · <span class="co">Ochenta &amp; Ocho</span></h3>
+          <div class="when">May 2026 – Present · Remote</div>
+          <p>Led the end-to-end launch of an e-commerce business built entirely with AI tools: Shopify storefront and catalog, logistics and supplier coordination, financial models, dashboards and automated workflows.</p>
+        </div>
+        <div class="job">
+          <h3>Earlier roles</h3>
+          <div class="earlier"><b>Agile Delivery Support (Contract)</b>, Heritage Communities · Nov 2021 – Apr 2022 · Kanban operating models and delivery metrics</div>
+          <div class="earlier"><b>Scrum Master &amp; Team Lead</b>, PlacidWay Medical Tourism · May 2020 – Jan 2021</div>
+          <div class="earlier"><b>Operations Director</b>, Vanguardia Eléctrica Civil · Feb 2018 – Dec 2020 · logistics, schedules and budgets for 12 awarded public bids (MXN $45M–$78M each)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <p class="eyebrow">Toolkit</p>
+      <h2>Certifications &amp; skills</h2>
+      <div class="grid3">
+        <div class="box">
+          <h3>Certifications</h3>
+          <ul>
+            <li>Project Management Professional (PMP), PMI · 2025</li>
+            <li>Disciplined Agile Scrum Master (DASM), PMI</li>
+            <li>Scrum Master Certified (SMC), VMEdu</li>
+            <li>ITIL 4 Foundation, PeopleCert</li>
+            <li>Google Project Management Certificate</li>
+            <li>Cisco Generative AI Green &amp; Blue Belts</li>
+            <li>Cisco Project Manager Green Belt</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>What I do</h3>
+          <ul>
+            <li>Program &amp; portfolio management</li>
+            <li>Governance &amp; operating models</li>
+            <li>Budget, margin &amp; financial reporting</li>
+            <li>Risk &amp; change management</li>
+            <li>Executive &amp; steering committee reporting</li>
+            <li>KPI dashboards &amp; AI-enabled delivery</li>
+            <li>Stakeholder &amp; vendor management</li>
+            <li>Team leadership &amp; coaching</li>
+            <li>ISO 9001 quality management</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>How I work</h3>
+          <p class="sub">Methods</p>
+          <div class="chips"><span class="chip">Agile / Scrum</span><span class="chip">Kanban</span><span class="chip">Waterfall</span></div>
+          <p class="sub">Tools</p>
+          <div class="chips"><span class="chip">Jira &amp; Confluence</span><span class="chip">Smartsheet</span><span class="chip">MS Project</span><span class="chip">Power BI</span><span class="chip">Advanced Excel</span><span class="chip">SAP</span><span class="chip">Miro</span><span class="chip">Slack</span><span class="chip">Microsoft 365</span></div>
+          <p class="sub">Languages</p>
+          <div class="chips"><span class="chip">English · fluent</span><span class="chip">Spanish · native</span></div>
+          <p class="sub">Recognition</p>
+          <p style="margin:0;font-size:15.5px;line-height:1.5">Cisco Community Leadership Award, FY23. As a leader of Cisco’s Green Team Network, brought Cisco customers into environmental initiatives that funded lake and river cleanups in Mexico, including the Magdalena River in Los Dinamos.</p>
+          <p class="sub">Education</p>
+          <p style="margin:0;font-size:15.5px;line-height:1.5">Bachelor of Business Administration (BBA), Utel Universidad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap" id="contact">
+    <div class="cta">
+      <p class="eyebrow" style="color:var(--coral)">Let's talk</p>
+      <h2>Have a program that needs a steady hand?</h2>
+      <p>I'm open to remote Senior Program or Project Manager roles. Send me a message and I'll get back to you soon.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:alvarezmendezmiriam@gmail.com?subject=Opportunity%20for%20Miriam%20%C3%81lvarez">alvarezmendezmiriam@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/miriamalvarezmendez" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://w.app/8xfvib" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>© 2026 Miriam Álvarez · Senior Program &amp; Project Manager</footer>
+</body>
+</html>
